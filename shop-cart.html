@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<title>Shopping Cart</title>
+	<link media="all" rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+		<div class="header-subwrapper">
+			<strong class="logo"><a href="index.html">SH</a></strong>
+			<div class="search-basket-wrapper">
+				<label for="search-field"></label>
+				<input type="text" class="search-field" id="search-field" placeholder="Search something..."/>
+				<div class="search">
+					<span class="flaticon-magnifier53"></span>
+				</div>
+				<span class="basket">
+					<span class="flaticon-shopping108"></span>
+					Basket (<span class="basket-count">0</span>)
+				</span>
+			</div>
+		</div>
+		<nav id="nav">
+			<ul>
+				<li>
+					<a href="category-all.html?cg=woman">Woman</a>
+				</li>
+				<li>
+					<a href="category-all.html?cg=men">Men</a>
+				</li>
+				<li>
+					<a href="category-all.html?cg=kids">Kids</a>
+				</li>
+				<li>
+					<a href="category-all.html?cg=coming soon">Coming Soon</a>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+	<hr/>
+	<div id="main">
+		<div class="breadcrumbs hidden">
+			<ul>
+				<li>
+					<a href="index.html">HOME</a><span> /</span>
+				</li>
+				<li class="js-category">
+					<a href="#">MEN</a><span> /</span>
+				</li>
+				<li class="js-sub-category">
+					<a href="#">SHOES</a><span> /</span>
+				</li>
+				<li class="js-product-name">
+					<a href="#">FLORAL PLIMSOLL</a>
+				</li>
+			</ul>
+		</div>
+		<div class="shopping-cart">
+			<h2>YOUR SHOPPING BAG</h2>
+			<p class="shopping-cart-subheader">Items reserved for limited time only</p>
+			<div class="shopping-cart-table-wrap">
+				<table class="shopping-cart-table">
+					<thead>
+					<tr class="labels">
+						<td>PRODUCT</td>
+						<td>DESCRIPTION</td>
+						<td>COLOR</td>
+						<td>SIZE</td>
+						<td>QTY</td>
+						<td>AMOUNT</td>
+						<td>DELETE</td>
+					</tr>
+					</thead>
+					<tbody>
+					<tr class="product-detail-row hidden">
+						<td>
+							<div class="product-thumbnail">
+								<img src="img/thumbnails/id1-img1-thumb.png" alt="Shoes"/>
+							</div>
+						</td>
+						<td class="p-description">
+							<span class="name">FLORAL PLIMSOLL</span>
+							<span class="ref">Ref. 2314/302</span>
+						</td>
+						<td class="p-color">
+							<span class="color">Black</span>
+						</td>
+						<td class="p-size">
+							<span class="size">39</span>
+						</td>
+						<td class="p-qty">
+							<label for="quantity"></label>
+							<input id="quantity" type="number" min="1" value="1"/>
+						</td>
+						<td class="p-amount">
+							&euro;<span>0</span>
+						</td>
+						<td class="p-del">
+							<span>&times;</span>
+						</td>
+					</tr>
+					<!--
+					<tr class="product-detail-row">
+						<td>
+							<div class="product-thumbnail">
+								<img src="img/thumbnails/id2-img2-thumb.png" alt="Shoes"/>
+							</div>
+						</td>
+						<td  class="p-description">
+							<span class="name">FLORAL PLIMSOLL</span>
+							<span class="ref">Ref. 2314/302</span>
+						</td>
+						<td class="p-color">
+							<span class="color">One Color</span>
+						</td>
+						<td class="p-size">
+							<span class="size">M</span>
+						</td>
+						<td class="p-qty">
+							<input type="number" min="0" value="1"/>
+						</td>
+						<td class="p-amount">
+							&euro;<span>99,95</span>
+						</td>
+						<td class="p-del">
+							<span>&times;</span>
+						</td>
+					</tr>
+					<tr class="product-detail-row">
+						<td>
+							<div class="product-thumbnail">
+								<img src="img/thumbnails/id3-img3-thumb.png" alt="Shoes"/>
+							</div>
+						</td>
+						<td  class="p-description">
+							<span class="name">PANTOFI SPORT</span>
+							<span class="ref">Ref. 2314/302</span>
+						</td>
+						<td class="p-color">
+							<span class="color">One Color</span>
+						</td>
+						<td class="p-size">
+							<span class="size">S</span>
+						</td>
+						<td class="p-qty">
+							<input type="number" min="0" value="1"/>
+						</td>
+						<td class="p-amount">
+							&euro;<span>99,95</span>
+						</td>
+						<td class="p-del">
+							<span>&times;</span>
+						</td>
+					</tr>
+					-->
+					</tbody>
+					<tfoot>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>Subtotal:</td>
+							<td  class="shopping-cart-total"><span>1000</span>&euro;</td>
+							<td></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<div class="product-order">
+			<span class="continue-shopping"><a href="category-all.html?cg=men">Continue Shopping</a></span>
+			<span><a href="#" class="order-button">ORDER NOW</a></span>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="collection">
+			<h3>COLLECTION</h3>
+			<ul>
+				<li><a href="category-all.html?cg=woman">Woman</a></li>
+				<li><a href="category-all.html?cg=men">Men</a></li>
+				<li><a href="category-all.html?cg=kids">Kids</a></li>
+				<li><a href="category-all.html?cg=coming soon">Coming Soon</a></li>
+			</ul>
+		</div>
+		<div class="site">
+			<h3>SITE</h3>
+			<ul>
+				<li><a href="#">Terms of Service</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Copyright Policy</a></li>
+				<li><a href="#">Press Kit</a></li>
+				<li><a href="#">Support</a></li>
+			</ul>
+		</div>
+		<div class="shop">
+			<h3>SHOP</h3>
+			<ul>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Shipping Methods</a></li>
+				<li><a href="#">Career</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="social">
+			<h3>SOCIAL</h3>
+			<p>Shoper is made with love in Warsaw.</p>
+			<p>2014 &copy; All rights reserved. El Passion</p>
+			<ul>
+				<li>
+					<a href="#"><span class="flaticon-twitter1"></span></a>
+				</li>
+				<li>
+					<a href="#"><span class="flaticon-facebook55"></span></a>
+				</li>
+				<li>
+					<a href="#"><span class="flaticon-instagram12"></span></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</div>
+	<!--Font generated by <a href="http://www.flaticon.com">flaticon.com</a>
+	under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY</a>.
+	 The authors are: <a href="http://www.freepik.com">Freepik</a>, <a href="http://www.zurb.com">Zurb</a>,
+	 <a href="http://www.elegantthemes.com">Elegant Themes</a>.-->
+	<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="js/productsDB.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
